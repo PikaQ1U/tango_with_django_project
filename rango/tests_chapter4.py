@@ -260,3 +260,4 @@ class Chapter4ExerciseTests(TestCase):
         """
         required_pattern = f"<img src=\"{settings.MEDIA_URL}cat.jpg\" alt=\"Picture of a Cat.?\" />"
         self.assertTrue(re.search(required_pattern, self.about_response.content.decode()), f"{FAILURE_HEADER}The HTML markup to include the image of a cat in the about template was not found. It needs to match exactly what we are looking for. Check the book.{FAILURE_FOOTER}")
+        
