@@ -142,3 +142,4 @@ class Chapter8TemplateTests(TestCase):
         
         for lookup in look_for:
             self.assertTrue(lookup in template_str, f"{FAILURE_HEADER}In base.html, we couldn't find the hyperlink '{lookup}'. Check your markup in base.html is correct and as written in the book.{FAILURE_FOOTER}")
+            
