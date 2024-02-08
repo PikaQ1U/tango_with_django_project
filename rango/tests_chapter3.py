@@ -176,3 +176,4 @@ class Chapter3AboutPageTests(TestCase):
         double_quotes_check = '<a href="/rango/">Index</a>' in response.content.decode()
         
         self.assertTrue(single_quotes_check or double_quotes_check, f"{FAILURE_HEADER}We could not find a hyperlink back to the index page in your about view. Check your about.html template, and try again.{FAILURE_FOOTER}")
+        
