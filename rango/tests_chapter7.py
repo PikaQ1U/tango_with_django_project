@@ -233,3 +233,4 @@ class Chapter7PageFormAncillaryTests(TestCase):
         page = python_pages[0]
         self.assertEqual(page.url, 'http://www.google.com', f"{FAILURE_HEADER}We created a new page with a URL of 'www.google.com'. The saved object is expected to have a URL of 'http://www.google.com'. Is your clean() method in PageForm working correctly?{FAILURE_FOOTER}")
         self.assertEqual(page.title, 'New webpage', f"{FAILURE_HEADER}The new page we created didn't have the title we specified in the add_page form. Are you missing something in your PageForm implementation?{FAILURE_FOOTER}")
+        
